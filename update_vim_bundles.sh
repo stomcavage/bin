@@ -11,8 +11,10 @@ BUNDLES=`ls -l --time-style="long-iso" $VIM_DIR | egrep '^d' | awk '{print $8}'`
 
 for BUNDLE in $BUNDLES
 do
+  echo "Updating ${BUNDLE}"
   cd "${VIM_DIR}/${BUNDLE}"
   ${GIT} pull origin master
+  echo
 done
 
 cd $START_DIR

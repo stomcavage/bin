@@ -5,4 +5,5 @@ BREW='/usr/local/bin/brew'
 
 ${BREW} update
 ${BREW} upgrade
+${BREW} cleanup
 
