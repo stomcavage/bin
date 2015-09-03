@@ -5,7 +5,7 @@ GIT=`which git`
 
 START_DIR=`pwd`
 
-VIM_DIR=/Users/stomcavage/.vim/bundle
+VIM_DIR=${HOME}/.vim/bundle
 
 BUNDLES=`ls -l --time-style="long-iso" $VIM_DIR | egrep '^d' | awk '{print $8}'`
 
