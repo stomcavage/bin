@@ -2,7 +2,7 @@
 
 GIT=`which git`
 REPO=$HOME/.oh-my-zsh
-START=`cwd`
+START=`pwd`
 
 cd $REPO
 
