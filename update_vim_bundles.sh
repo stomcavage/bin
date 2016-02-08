@@ -7,7 +7,8 @@ START_DIR=`pwd`
 
 VIM_DIR=${HOME}/.vim/bundle
 
-BUNDLES=`ls -l --time-style="long-iso" $VIM_DIR | egrep '^d' | awk '{print $8}'`
+# The column containing the directory name might change depending on OS
+BUNDLES=`ls -l --time-style="long-iso" $VIM_DIR | egrep '^d' | awk '{print $9}'`
 
 for BUNDLE in $BUNDLES
 do
