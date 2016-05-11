@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 GIT=`which git`
 MVN=`which mvn`
